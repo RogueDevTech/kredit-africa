@@ -32,7 +32,7 @@ export default function BuildDevelopers() {
     <section className="relative w-full min-h-screen">
       {/* Content Section */}
       <motion.div
-        className="relative z-10 wrapper py-6 sm:py-16 lg:py-20"
+        className="relative z-10 wrapper py-6 sm:py-16 lg:pt-30 lg:pb-19"
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }}
@@ -70,9 +70,9 @@ export default function BuildDevelopers() {
           >
             <SubTittle label="Built for Developers" />
           </motion.div>
-          <div className="mt-6 w-full flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6">
+          <div className="mt-4  w-full flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6">
             <motion.h2
-              className="text-[32px] sm:text-[40px] md:text-[50px] lg:text-[60px] w-full lg:w-[65%] leading-tight lg:leading-[55px] font-space font-medium text-[#000]"
+              className="text-[32px] sm:text-[40px] md:text-[50px] lg:text-[64px] w-full lg:w-[65%] leading-tight lg:leading-[55px] font-space font-medium text-[#000]"
               variants={{
                 hidden: { opacity: 0, y: -16 },
                 show: {
@@ -159,7 +159,7 @@ export default function BuildDevelopers() {
           {developerFeatures.map((feature, idx) => (
             <motion.div
               key={feature.id}
-              className="bg-gray-200 h-[180px] sm:h-[190px] lg:h-[200px] flex flex-col justify-end rounded-[6px] sm:rounded-[8px] p-4 sm:p-5 lg:p-6"
+              className="bg-[#EFEFEF] h-[180px] sm:h-[190px] lg:h-[200px] flex flex-col justify-end rounded-[6px] sm:rounded-[8px] p-4 sm:p-5 lg:p-6"
               custom={idx}
               variants={{
                 hidden: (i: number) => ({
@@ -184,10 +184,10 @@ export default function BuildDevelopers() {
               // whileHover={{ y: -4, scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
             >
-              <h3 className="text-black font-space font-medium text-[16px] sm:text-[18px] lg:text-[20px] leading-tight mb-2 sm:mb-3">
+              <h3 className="text-[#000000] font-space font-medium text-[16px] sm:text-[18px] lg:text-[20px] leading-tight mb-2 sm:mb-2">
                 {feature.title}
               </h3>
-              <p className="w-full sm:w-[90%] text-gray-600 font-inter text-[12px] sm:text-[13px] lg:text-[14px] leading-relaxed">
+              <p className="w-full sm:w-[90%] text-[#787878] font-inter text-[12px] sm:text-[14px] lg:text-[14px] leading-relaxed">
                 {feature.description}
               </p>
             </motion.div>

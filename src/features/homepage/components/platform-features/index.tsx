@@ -104,7 +104,7 @@ export default function PlatformFeatures({
   } as const;
 
   return (
-    <section className={`relative w-full  pt-8 md:py-4 ${className}`}>
+    <section className={`relative w-full  pt-8 md:py-3 ${className}`}>
       <Image
         src={imageSrc}
         alt="Solutions background"
@@ -115,7 +115,7 @@ export default function PlatformFeatures({
       <div className="relative z-10 wrapper h-full">
         {/* Header Section */}
         <motion.div
-          className="mt-[200px] md:mt-[300px] lg:mt-[400px] flex flex-col items-start justify-between"
+          className="mt-[200px] md:mt-[300px] lg:mt-[350px] flex flex-col items-start justify-between"
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.2 }}

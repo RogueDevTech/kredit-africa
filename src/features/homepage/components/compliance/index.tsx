@@ -67,7 +67,7 @@ export default function Compliance() {
   const activeItem = complianceItems.find((item) => item.id === activeTab);
 
   return (
-    <section className={`relative w-full min-h-screen py-4 sm:py-12 lg:py-16`}>
+    <section className={`relative w-full min-h-screen py-4 sm:py-12 lg:py-4`}>
       <div className="relative z-10 wrapper h-full">
         <motion.div
           className="pt-[30px] sm:pt-[120px] lg:pt-[150px] pb-8 sm:pb-12 lg:pb-16"
@@ -110,7 +110,7 @@ export default function Compliance() {
             </motion.div>
             <div className="mt-6 w-full flex flex-col lg:flex-row items-start lg:items-end justify-between gap-6 lg:gap-8">
               <motion.h2
-                className="text-[28px] sm:text-[36px] md:text-[48px] lg:text-[56px] xl:text-[60px] w-full lg:w-[60%] leading-[1.1] sm:leading-[1.0] font-space font-medium text-[#000]"
+                className="text-[28px] sm:text-[36px] md:text-[48px] lg:text-[56px] xl:text-[60px] w-full lg:w-[60%] leading-[1.1] sm:leading-[90%] font-space font-medium text-[#000]"
                 variants={{
                   hidden: { opacity: 0, y: -16 },
                   show: {
@@ -169,10 +169,10 @@ export default function Compliance() {
             },
           }}
         >
-          <div className="flex flex-col lg:flex-row gap-4 lg:gap-1">
+          <div className=" flex flex-col lg:flex-row gap-4 lg:gap-1">
             {/* Left Sidebar */}
             <motion.div
-              className="w-full lg:w-[25%] space-y-2"
+              className=" w-full lg:w-[30%] space-y-1"
               variants={{
                 hidden: { opacity: 1 },
                 show: { opacity: 1, transition: { staggerChildren: 0.08 } },
@@ -182,7 +182,7 @@ export default function Compliance() {
                 <motion.div
                   key={item.id}
                   onClick={() => setActiveTab(item.id)}
-                  className={`px-4 sm:px-6 pt-6 sm:pt-8 pb-4 sm:pb-6 rounded-lg cursor-pointer transition-all duration-200 ${
+                  className={` px-4 sm:px-6 pt-6 sm:pt-10 pb-4 sm:pb-6 rounded-lg cursor-pointer transition-all duration-200 ${
                     activeTab === item.id
                       ? "bg-black text-white"
                       : "bg-gray-200 text-gray-700 hover:bg-gray-300"
@@ -204,8 +204,10 @@ export default function Compliance() {
                   <div className="mt-2 sm:mt-3 flex flex-col justify-between">
                     <div className="flex items-center justify-between">
                       <h3
-                        className={`leading-none font-space font-medium text-[16px] sm:text-[18px] mb-2 ${
-                          activeTab === item.id ? "text-white" : "text-gray-800"
+                        className={`leading-none font-space font-normal text-[16px] sm:text-[18px] mb-3 ${
+                          activeTab === item.id
+                            ? "text-white"
+                            : "text-[#000000]"
                         }`}
                       >
                         {item.title}
@@ -236,7 +238,7 @@ export default function Compliance() {
                     <p
                       className={`font-inter text-[12px] sm:text-[14px] ${
                         activeTab === item.id
-                          ? "text-white/80"
+                          ? "text-[#ffffff]"
                           : "text-[#787878]"
                       }`}
                     >
@@ -248,7 +250,7 @@ export default function Compliance() {
             </motion.div>
 
             {/* Right Content Area */}
-            <motion.div className="w-full lg:w-[75%] flex flex-col items-start justify-between rounded-[8px] bg-gray-200 py-6 sm:py-8 px-4 sm:px-6">
+            <motion.div className="w-full lg:w-[70%] flex flex-col items-start justify-between rounded-[8px] bg-[#F5F5F5] py-6 sm:pt-14 px-4 sm:px-8 min-h-[400px]">
               <AnimatePresence mode="wait">
                 {activeItem && (
                   <motion.div
@@ -257,14 +259,16 @@ export default function Compliance() {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -16 }}
                     transition={{ duration: 0.2 }}
-                    className="w-full"
+                    className="w-full flex flex-col justify-between h-full"
                   >
-                    <h2 className="text-[24px] sm:text-[32px] md:text-[40px] lg:text-[48px] font-space font-bold text-gray-800 mb-6 sm:mb-8">
-                      {activeItem.content.title}
-                    </h2>
-
+                    {/* Top Section */}
+                    <div className=" flex flex-col items-start">
+                      <h2 className="text-[24px] sm:text-[32px] md:text-[40px] lg:text-[48px] font-space font-normal text-[#000000] mb-6 sm:mb-8 text-left">
+                        {activeItem.content.title}
+                      </h2>
+                    </div>
                     {/* Privacy Icon */}
-                    <div className="mb-6 sm:mb-8 w-full flex items-center justify-center">
+                    <div className=" mb-6 sm:mb-8 w-full flex items-center justify-center">
                       <svg
                         width="120"
                         height="120"
@@ -283,9 +287,12 @@ export default function Compliance() {
                       </svg>
                     </div>
 
-                    <p className="text-[14px] sm:text-[16px] lg:text-[18px] w-full max-w-[700px] font-inter text-gray-700 leading-relaxed">
-                      {activeItem.content.description}
-                    </p>
+                    {/* Bottom Section */}
+                    <div className="">
+                      <p className="text-[14px] sm:text-[16px] lg:text-[16px] w-full max-w-[600px] font-inter text-[#000] leading-relaxed text-left">
+                        {activeItem.content.description}
+                      </p>
+                    </div>
                   </motion.div>
                 )}
               </AnimatePresence>

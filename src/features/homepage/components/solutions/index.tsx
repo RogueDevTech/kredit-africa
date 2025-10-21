@@ -63,7 +63,7 @@ export default function Solutions({
 }: SolutionsProps) {
   return (
     <section
-      className={`border border-[transparent] relative w-full min-h-screen ${className}`}
+      className={` border border-[transparent] relative w-full min-h-screen ${className}`}
     >
       <Image
         src={imageSrc}
@@ -134,7 +134,7 @@ export default function Solutions({
                 Plug into our infrastructure and unlock the power of secure,
                 data-driven financial decision-making.
               </h2>
-              <p className="mt-4 sm:mt-6 text-[14px] sm:text-[16px] lg:text-[18px] w-full lg:w-[95%] font-inter font-medium text-[#586667]">
+              <p className="mt-4 sm:mt-6 text-[14px] sm:text-[16px] lg:text-[18px] w-full lg:w-[100%] font-inter font-medium text-[#586667]">
                 We build APIs that simplify credit intelligence, fraud
                 prevention, and risk management. Plug into our infrastructure
                 and unlock the power of secure, data-driven financial
@@ -144,7 +144,7 @@ export default function Solutions({
           </div>
         </motion.div>
         <motion.div
-          className="mt-0 sm:mt-12 lg:mt-[80px] py-2 sm:py-4 lg:py-6"
+          className="mt-0 sm:mt-12 lg:mt-[40px] py-2 sm:py-4 lg:py-6"
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.15 }}

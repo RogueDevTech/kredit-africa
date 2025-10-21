@@ -20,7 +20,7 @@ export default function NewCard({
 }: NewCardProps) {
   return (
     <div
-      className={`relative w-full ${heightClass} rounded-[12px] overflow-hidden ${className}`}
+      className={`relative w-full ${heightClass} rounded-[8px] overflow-hidden ${className}`}
     >
       <Image
         src={imageSrc}
@@ -30,19 +30,19 @@ export default function NewCard({
         className="object-cover"
       />
       {/* border stroke like the mock */}
-      <div className="pointer-events-none absolute inset-0 rounded-[12px] ring-1 ring-white/80" />
+      <div className="pointer-events-none absolute inset-0 rounded-[8px] ring-1 ring-white/80" />
 
       {/* content */}
-      <div className="relative z-10 py-6 px-4 sm:py-4 sm:px-4 md:py-6 md:px-6 lg:py-8 lg:px-6">
+      <div className="relative z-10 py-6 px-4 sm:py-4 sm:px-4 md:py-6 md:px-6 lg:py-4 lg:px-5">
         <p
-          className={`${textColor} font-space font-medium text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] leading-tight`}
+          className={`${textColor} font-space font-medium text-[16px] sm:text-[18px] md:text-[20px] lg:text-[20px] leading-tight`}
         >
           {title}
         </p>
         <p
-          className={`mt-2 sm:mt-3 ${
+          className={`mt-2 sm:mt-2 ${
             textColor === "text-white" ? "text-white/85" : "text-black/85"
-          } font-inter text-[12px] sm:text-[14px] md:text-[16px] max-w-[250px] sm:max-w-[300px] md:max-w-[350px] lg:max-w-[400px]`}
+          } font-inter text-[12px] sm:text-[14px] md:text-[16px] max-w-[250px] sm:max-w-[300px] md:max-w-[350px] lg:max-w-[400px] lg:text-[14px]`}
         >
           {description}
         </p>

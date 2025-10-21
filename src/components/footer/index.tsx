@@ -77,13 +77,13 @@ export default function Footer() {
           </div>
           {/* Social Icons */}
           <div
-            className="flex items-center gap-4 animate-fade-up"
+            className="flex items-center gap-2 animate-fade-up"
             style={{ animationDelay: "140ms" }}
           >
             {/* WhatsApp Icon */}
             <Link
               href="/contact"
-              className="w-8 h-8 rounded-full border border-white flex items-center justify-center"
+              className="w-10 h-10 rounded-full border border-white flex items-center justify-center"
             >
               <svg
                 width="20"
@@ -105,7 +105,7 @@ export default function Footer() {
             {/* Telegram Icon */}
             <Link
               href="/contact"
-              className="w-8 h-8 rounded-full border border-white flex items-center justify-center"
+              className="w-10 h-10 rounded-full border border-white flex items-center justify-center"
             >
               <svg
                 width="19"
@@ -138,13 +138,14 @@ export default function Footer() {
               >
                 <Link
                   href="/book-session"
-                  className="cursor-pointer text-white font-inter text-[16px]"
+                  className="cursor-pointer text-white font-inter text-[29.4px]"
                 >
                   Book a Demo
                 </Link>
+                <div className="-mt-10">
                 <svg
-                  width="16"
-                  height="16"
+                  width="25"
+                  height="20"
                   viewBox="0 0 24 24"
                   fill="none"
                   className="text-white"
@@ -157,21 +158,23 @@ export default function Footer() {
                     strokeLinejoin="round"
                   />
                 </svg>
+                </div>
+               
               </div>
 
               <div className="flex flex-col sm:flex-row justify-between gap-6">
                 {/* Navigation Links */}
                 <div
-                  className="space-y-2 animate-fade-up"
+                  className="space-y-2 animate-fade-up "
                   style={{ animationDelay: "220ms" }}
                 >
-                  <div className="text-white font-inter text-[16px]">
+                  <div className="text-white font-inter text-[14.7px]">
                     <Link href="/">Home</Link> / Company /
                   </div>
-                  <div className="text-white font-inter text-[16px]">
+                  <div className="text-white font-inter text-[14.7px]">
                     Solutions / <Link href="/docs">API Docs</Link>
                   </div>
-                  <div className="text-white font-inter text-[16px]">
+                  <div className="text-white font-inter text-[14.7px]">
                     Careers / <Link href="/contact">Contact</Link>
                   </div>
                 </div>
@@ -198,7 +201,7 @@ export default function Footer() {
                   className="flex flex-col gap-1 text-white font-inter text-[16px] animate-fade-up"
                   style={{ animationDelay: "300ms" }}
                 >
-                  <p className="font-medium font-inter text-[14.5px] text-[#fff]">
+                  <p className="font-medium font-inter text-[14.7px] text-[#fff]">
                     Email{" "}
                   </p>
                   <span className="cursor-pointer  font-medium font-inter text-[12.5px] text-[#f5f5f5]">

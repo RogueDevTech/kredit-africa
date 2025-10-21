@@ -91,7 +91,7 @@ export default function Faq() {
             </motion.div>
             <div className="flex flex-col">
               <motion.h2
-                className="text-[28px] sm:text-[36px] md:text-[48px] lg:text-[56px] xl:text-[60px] leading-[1.1] sm:leading-[1.0] font-space font-medium text-[#000] mt-4 mb-6 sm:mb-8"
+                className="text-[28px] sm:text-[36px] md:text-[48px] lg:text-[56px] xl:text-[60px] leading-[1.1] sm:leading-[1.0] font-space font-medium text-[#000] mt-4 mb-6 sm:mb-5"
                 variants={{
                   hidden: { opacity: 0, y: -16 },
                   show: {
@@ -182,7 +182,7 @@ export default function Faq() {
                       setActiveFaq(activeFaq === faq.id ? "" : faq.id)
                     }
                   >
-                    <h3 className="text-black font-space font-medium text-[16px] sm:text-[18px] leading-tight mb-2">
+                    <h3 className="text-[#000] font-space font-medium text-[16px] sm:text-[20px] leading-tight mb-2">
                       {faq.question}
                     </h3>
                     {activeFaq === faq.id && (
@@ -190,7 +190,7 @@ export default function Faq() {
                         initial={{ opacity: 0, y: -6 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.25 }}
-                        className="text-gray-600 font-inter text-[14px] sm:text-[16px] leading-relaxed"
+                        className="text-[#787878] font-inter text-[14px] sm:text-[14px] leading-relaxed"
                       >
                         {faq.answer}
                       </motion.p>
