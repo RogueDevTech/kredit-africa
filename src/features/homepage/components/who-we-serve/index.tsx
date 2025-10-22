@@ -50,7 +50,7 @@ const solutions = [
 export default function WhoWeServe() {
   return (
     <section
-      className={` border border-[transparent] relative w-full min-h-screen py-8 sm:py-12 lg:py-16`}
+      className={` border border-[transparent] relative w-full min-h-screen py-8 sm:py-12 lg:pt-30`}
     >
       <div className="relative z-10 wrapper h-full">
         {/* Add your solutions content here */}
@@ -134,7 +134,7 @@ export default function WhoWeServe() {
           </div>
         </motion.div>
         <motion.div
-          className="mt-4 sm:mt-12 lg:mt-[80px] py-2 sm:py-4 lg:py-6"
+          className=" mt-4 sm:mt-12 lg:mt-[40px] py-2 sm:py-4 lg:py-2"
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.15 }}
@@ -150,7 +150,7 @@ export default function WhoWeServe() {
             },
           }}
         >
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-6 lg:gap-1">
+          <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-6 lg:gap-1">
             {solutions.map((item, idx) => (
               <motion.div
                 key={idx}

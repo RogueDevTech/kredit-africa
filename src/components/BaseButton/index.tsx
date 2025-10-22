@@ -27,7 +27,7 @@ export default function BaseButton({
       onClick={onClick}
       disabled={disabled}
       className={
-        `inline-flex items-center justify-center rounded-md px-5 py-4  text-sm cursor-pointer font-medium transition-colors duration-150` +
+        `inline-flex items-center justify-center rounded-md lg:px-9 lg:py-5 px-7 py-4  text-sm cursor-pointer font-medium transition-colors duration-150` +
         (disabled ? " opacity-60 cursor-not-allowed" : " hover:opacity-90") +
         (className ? ` ${className}` : "")
       }

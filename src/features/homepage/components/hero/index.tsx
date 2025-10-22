@@ -399,10 +399,10 @@ export default function HeroSection() {
           transition={{ delay: 2 }}
         />
 
-        <div className="wrapper flex justify-center items-center min-h-[600px] sm:min-h-[700px] lg:min-h-[900px] py-8 sm:py-12 lg:py-16">
+        <div className="wrapper flex justify-center items-center min-h-[500px] sm:min-h-[700px] lg:min-h-[850px] pt-8 sm:pt-12 lg:pt-16">
           <motion.div
             ref={containerRef}
-            className="w-full max-w-7xl px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center gap-2 sm:gap-6 lg:gap-3"
+            className=" w-full max-w-7xl px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center gap-2 sm:gap-6 lg:gap-3"
             initial="hidden"
             animate={isVisible ? "show" : "hidden"}
             variants={containerVariants}
@@ -418,13 +418,13 @@ export default function HeroSection() {
             {/* Enhanced title with word-by-word 3D animation */}
             <ScrollReveal direction="up" delay={0.4}>
               <motion.h1
-                className="w-[95%] max-w-5xl mt-2 mb-4 text-[32px] sm:text-[48px] md:text-[64px] lg:text-[80px] xl:text-[96px] leading-[1.1] sm:w-[75%] sm:leading-[83px] text-black font-medium text-center font-space"
+                className="w-full max-w-5xl mt-2 mb-3 text-[32px] sm:text-[48px] md:text-[64px] sm:w-[90%] lg:text-[80px] xl:text-[96px] leading-[90%] text-black font-medium text-center font-space mx-auto"
                 variants={textRevealVariants}
               >
                 {titleWords.map((word, index) => (
                   <motion.span
                     key={`${word}-${index}`}
-                    className="inline-block mr-[0.35ch] cursor-pointer"
+                    className="inline-block mr-[0.35ch] cursor-pointer "
                     variants={wordVariants}
                     whileHover="hover"
                   >
@@ -437,7 +437,7 @@ export default function HeroSection() {
             {/* Enhanced description with blur reveal */}
             <ScrollReveal direction="up" delay={0.6}>
               <motion.p
-                className="text-sm sm:text-base lg:text-[18px] text-[#586667] font-medium text-center font-inter max-w-3xl"
+                className=" text-sm sm:text-base lg:text-[16px] text-[#586667] font-medium text-center font-inter max-w-3xl"
                 variants={textRevealVariants}
               >
                 APIs and AI-powered tools for credit intelligence, fraud
@@ -448,7 +448,7 @@ export default function HeroSection() {
             {/* Enhanced buttons with magnetic and ripple effects */}
             <ScrollReveal direction="up" delay={0.8}>
               <motion.div
-                className="mt-0 sm:mt-2 flex flex-row sm:flex-row items-center gap-3 sm:gap-4"
+                className="mt-0 sm:mt-2 flex flex-row sm:flex-row items-center gap-3 sm:gap-3"
                 variants={textRevealVariants}
               >
                 <Link href="/docs">
@@ -500,7 +500,7 @@ export default function HeroSection() {
                         />
                         <BaseButton
                           label="Book Call"
-                          backgroundColor="#000"
+                          backgroundColor="#1A1A1A"
                           textColor="#fff"
                         />
                       </motion.div>
@@ -513,10 +513,10 @@ export default function HeroSection() {
             {/* Enhanced stats with 3D hover effects */}
             <ScrollReveal direction="up" delay={1.0}>
               <motion.div
-                className="mt-8 sm:mt-12 lg:mt-16 w-full max-w-4xl no_scroll overflow-x-auto sm:overflow-visible -mx-4 px-4 snap-x snap-mandatory"
+                className=" mt-8 sm:mt-12 lg:mt-24 w-full max-w-4xl no_scroll overflow-x-auto sm:overflow-visible  px-4 snap-x snap-mandatory"
                 variants={containerVariants}
               >
-                <div className="flex flex-row items-center gap-4 sm:gap-4 lg:gap-8 text-black whitespace-nowrap sm:whitespace-normal sm:justify-between">
+                <div className=" flex flex-row items-center gap-4 sm:gap-4 lg:gap-8 text-black whitespace-nowrap sm:whitespace-normal sm:justify-between">
                   {features.map((item, idx) => (
                     <motion.div
                       key={idx}

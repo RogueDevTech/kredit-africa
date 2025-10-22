@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function Ready() {
   return (
-    <section className="relative w-full py-16 sm:py-24 md:py-32 lg:py-50 bg-white">
+    <section className="relative w-full py-16 sm:py-24 md:py-32 lg:py-45 bg-white">
       <div className="wrapper px-4 sm:px-0">
         <motion.div
           className="flex flex-col items-center text-center"
@@ -50,7 +50,7 @@ export default function Ready() {
           </motion.h2>
 
           {/* Buttons */}
-          <motion.div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+          <motion.div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto">
             <motion.div
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.98 }}
@@ -74,9 +74,9 @@ export default function Ready() {
               >
                 <BaseButton
                   label="Book a Demo"
-                  backgroundColor="#F5F5F5"
+                  backgroundColor="#9F9F9F3D"
                   textColor="#000"
-                  borderColor="#000"
+                  // borderColor="#000"
                   className="w-full sm:w-auto"
                 />
               </Link>

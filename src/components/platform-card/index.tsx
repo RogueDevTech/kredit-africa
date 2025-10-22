@@ -26,7 +26,7 @@ export default function PlatformCard({
 
       <div className="flex flex-col gap-2">
         {/* Title */}
-        <h3 className="text-white font-space font-bold text-[16px] sm:text-[18px] lg:text-[20px] leading-tight mb-1">
+        <h3 className="text-white font-space font-normal text-[16px] sm:text-[18px] lg:text-[20px] leading-tight mb-1">
           {title}
         </h3>
 

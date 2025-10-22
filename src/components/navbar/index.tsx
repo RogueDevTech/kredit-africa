@@ -44,7 +44,7 @@ export default function Navbar() {
               backdropFilter: "blur(40px)",
             }}
           >
-            <div className="flex items-center gap-6">
+            <div className="flex items-center gap-6 py-1 px-4">
               <a
                 href="#"
                 className="text-black font-inter text-sm hover:text-gray-700 transition-colors"
